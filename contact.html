@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Page</title>
+    <link
+      href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="CSS/Style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <img
+        class="logo"
+        src="images/mainLogo.jpg"
+        width="200px"
+        alt="our Main Loog"
+      />
+
+      <!-- NavBar Start -->
+      <nav class="navBar">
+        <ul class="navbar-list">
+          <li><a class="navbar-link home-link" href="/index.html">Home</a></li>
+          <li>
+            <a class="navbar-link about-link" href="/about.html">About</a>
+          </li>
+          <li>
+            <a class="navbar-link services-link" href="/service.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link portfolio-link" href="/portfolio.html"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a class="navbar-link contact-link" href="/contact.html">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- NavBar End -->
+      <div class="mobile-navbar-btn">
+        <ion-icon class="mobile-nav-icon" name="menu"></ion-icon>
+
+        <ion-icon
+          class="mobile-nav-icon"
+          name="close-circle-outline"
+        ></ion-icon>
+      </div>
+    </header>
+    <div class="map">
+      <iframe
+        width="100%"
+        height="400"
+        frameborder="0"
+        src="https://www.bing.com/maps/embed?h=400&w=800&cp=23.218160349790992~77.46066968029038&lvl=16.02&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+        scrolling="no"
+      >
+      </iframe>
+    </div>
+    <!-- <div>
+      <iframe
+        width="100%"
+        height="280"
+        frameborder=""
+        src="https://www.bing.com/maps/embed?h=280&w=800&cp=23.218130301346108~77.46117366528279&lvl=16.02&typ=d&sty=r&src=SHELL&FORM=MBEDV8"
+        scrolling="no"
+      >
+      </iframe>
+      <div
+        style="
+          white-space: nowrap;
+          text-align: center;
+          width: 100vw;
+          padding: 6px 0;
+        "
+      >
+        <a
+          id="largeMapLink"
+          target="_blank"
+          href="https://www.bing.com/maps?cp=23.218130301346108~77.46117366528279&amp;sty=r&amp;lvl=16.02&amp;FORM=MBEDLD"
+          >View Larger Map</a
+        >
+        &nbsp; | &nbsp;
+        <a
+          id="dirMapLink"
+          target="_blank"
+          href="https://www.bing.com/maps/directions?cp=23.218130301346108~77.46117366528279&amp;sty=r&amp;lvl=16.02&amp;rtp=~pos.23.218130301346108_77.46117366528279____&amp;FORM=MBEDLD"
+          >Get Directions</a
+        >
+      </div>
+    </div> -->
+    <!-- Contact -->
+    <section class="section section-contact">
+      <div class="container">
+        <h2 class="common-heading">Contact Us</h2>
+      </div>
+
+      <div class="section-contact-main contact-container">
+        <form action="https://formspree.io/f/xjvljqdd" method="POST">
+          <div class="grid grid-two-column">
+            <div>
+              <label for="username"></label>
+              <input
+                placeholder="Enter Your Name"
+                type="text"
+                name="username"
+                id="username"
+                required
+                autocomplete="off"
+              />
+            </div>
+            <div>
+              <label for="email"></label>
+              <input
+                placeholder="demo@gmail.com"
+                type="email"
+                name="username"
+                id="email"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="subject"></label>
+            <input
+              id="subject"
+              type="text"
+              name="subject"
+              placeholder="subject"
+              autocomplete="off"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="textarea"></label>
+            <textarea
+              name="textarea"
+              id="textarea"
+              cols="30"
+              rows="10"
+              autocomplete="off"
+              required
+              minlength="5"
+              placeholder="Minimum 5 word required..."
+            ></textarea>
+          </div>
+          <div>
+            <input type="submit" name="submit" id="submit" class="btn" />
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="section-footer section">
+      <div class="container grid grid-four-column">
+        <div class="f-about">
+          <h3>About</h3>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore,
+            quis re
+          </p>
+        </div>
+        <!-- ends =================================-->
+        <div class="f-links">
+          <h3>Links</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Service</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">portfolio</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Ends==================== -->
+        <div class="f-services">
+          <h3>Services</h3>
+          <ul>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Web design</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Web Developer</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Mern Project</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Onlin Classes</a>
+            </li>
+            <li>
+              <span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </span>
+              <a href="#">Github</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Ends=================== -->
+        <div class="f-address">
+          <h3>Have a Question?</h3>
+          <address>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="pin"></ion-icon>
+                </span>
+                Mumbai, India
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="call"></ion-icon>
+                </span>
+                <a href="tel:+917974439538">+91 7974439538</a>
+              </p>
+            </div>
+            <div>
+              <p>
+                <span>
+                  <ion-icon name="mail"></ion-icon>
+                </span>
+                <a href="mailto:ranaroshan763@gmail.com"
+                  >ranaroshna763@gmail.com</a
+                >
+              </p>
+            </div>
+          </address>
+        </div>
+        <!-- Ends ============================ -->
+      </div>
+      <div class="container">
+        <div class="f-social-icons">
+          <a target="_blank" href="https://www.instagram.com/">
+            <ion-icon class="icons" name="logo-instagram"></ion-icon>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://github.com/roshanrana1234/Daily-List-"
+          >
+            <ion-icon class="icons" name="logo-github"></ion-icon>
+          </a>
+
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/roshan-rana-8344a720b/"
+          >
+            <ion-icon class="icons" name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+
+        <div class="f-credits">
+          <p>
+            Copyright @2022 All rights reserved | This template is made by
+            Roshan Rana ❤
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="index.js" defer></script>
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </body>
+</html>
